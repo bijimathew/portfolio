@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #24252A;
+    font-size: 62.5%;
+}
+.logo{
+    width: 14rem;
+}
+li,a,button{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 1.6rem;
+    color: white;
+    text-decoration: none;
+}
+.navlink{
+    list-style-type: none;
+}
+
+header{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 10%;
+}
+
+.navlink li{
+    display: inline-block;
+    padding: 0 2rem;
+}
+
+.navlink li a{
+    transition: all 0.3s;
+}
+
+.navlink li a:hover{
+    cursor: pointer;
+    color: rgb(23, 220, 190);
+}
+.contact_btn button{
+    padding: 1rem 4rem;
+    border-radius: 1.6rem;
+    outline: none;
+    border: none;
+    background-color: rgb(58, 204, 58);
+    transition: all .3s;
+}
+
+.contact_btn button:hover{
+    cursor: pointer;
+    color: black;
+    background-color: rgb(242, 249, 242)
+}
+
+/* main body */
+
+.container{
+    height: 50rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    align-items: center;
+    /* align-content: center; */ 
+    /* background-color: white; */
+}
+.flexitem{
+    width: 50%;
+    overflow:hidden;
+}
+.item1{
+    /* margin-top: 7%; */
+    /* flex-shrink: 8; */
+    width: min-content;
+}
+
+.item2{
+    font-size: 6rem;
+    color: whitesmoke;
+    letter-spacing: 1rem;
+    overflow: hidden;
+    animation: 
+        typing 3s,
+        cursor .4s step-end infinite alternate;
+}
+@keyframes typing {
+    from{width:0}
+}
+@keyframes cursor{
+ 
+}
+.html_logo{
+    width: 350px;
+    height: 350px;
+}
+
