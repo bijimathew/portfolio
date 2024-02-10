@@ -71,6 +71,7 @@ header{
 .flexitem{
     width: 50%;
     overflow:hidden;
+
 }
 .item1{
     /* margin-top: 7%; */
@@ -81,20 +82,68 @@ header{
 .item2{
     font-size: 6rem;
     color: whitesmoke;
-    letter-spacing: 1rem;
+    display: inline-flex;
+    /* margin-left: 34rem; */
+    /* letter-spacing: 1rem;
     overflow: hidden;
     animation: 
         typing 3s,
-        cursor .4s step-end infinite alternate;
+        cursor .4s step-end infinite alternate; */
 }
-@keyframes typing {
+/* @keyframes typing {
     from{width:0}
 }
 @keyframes cursor{
  
-}
+} */
 .html_logo{
     width: 350px;
     height: 350px;
 }
 
+.fixed_text{
+    font-size: 3.2rem;
+    font-weight: 600;
+    color: aqua;
+    letter-spacing: .6rem;
+}
+.changing_text,.sec-text{
+    letter-spacing: .6rem;
+    font-weight: 600;
+    /* text-align: center; */
+    /* margin-left: 8rem; */
+    margin-top: 6rem;
+    list-style-type: none;  
+    line-height: 3rem;
+    height: 3rem;
+    overflow: hidden;
+
+  
+}
+.changing_text li{
+    position: relative;
+    list-style: none;
+    font-weight: 500;
+}  
+
+.changing_text li span{
+    font-size: 2.5rem;
+    position: relative;
+}
+.changing_text li span::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    border-left: 3px solid rgba(255, 32, 32, 0.81);
+    background-color: #24252A;
+    animation: typing 2s steps(6) infinite;
+}
+
+@keyframes typing{
+100%{
+    left: 100%;
+    margin: 0 -3.5rem 0 3.5rem;
+}
+}

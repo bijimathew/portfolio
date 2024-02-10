@@ -29,9 +29,36 @@
             <img class="html_logo" src="images/html.png" alt="">
         </div>
         <div class="flexitem item2">
-            <H1 class="text">PROFICIENT IN HTML....</H1>
+            <div class="fixed_text">
+                PROFICIENT IN:
+            </div>
+            <ul class="changing_text">
+                <li><span class="sec-text"></span></li>
+            </ul>
         </div>
     </div>
+    <script>
+        const text=document.querySelector(".sec-text");
+        const textload=()=>{
+            setTimeout(() => {
+                text.textContent="HTML";
+            }, 0);
+
+            setTimeout(() => {
+                text.textContent="CSS";
+            }, 2000);
+
+            setTimeout(() => {
+                text.textContent="REACT";
+            }, 4000);
+
+            setTimeout(() => {
+                text.textContent="PYTHON";
+            }, 6000);
+        }
+        textload();
+        setInterval(textload,8000);
+    </script>
 </body>
 
 </html>
