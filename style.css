@@ -106,6 +106,7 @@ header{
     font-weight: 600;
     color: aqua;
     letter-spacing: .6rem;
+    /* transition: ease-in-out 3s; */
 }
 .changing_text,.sec-text{
     letter-spacing: .6rem;
